@@ -1,0 +1,72 @@
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+// General
+body {
+  padding: 0 1em 1em;
+}
+p {
+  margin: 0;
+  text-align: center;
+  font-family: 'Architects Daughter';font-size: 22px;
+}
+h2 {
+  margin: 0 0 .5em;
+  font-weight: normal;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+// Layout
+.row {
+  display:flex;
+  .col {
+    flex:1;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  border-color: white;
+}
+.tab {
+  width: 100%;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Architects Daughter';font-size: 22px;
+    padding: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-color:white;
+    &::after {
+      content: "\276F";
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    transition: all .35s;
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+

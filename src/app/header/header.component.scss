@@ -1,0 +1,39 @@
+.timlogo{
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+
+}
+
+//
+a{
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  font-family: 'Architects Daughter';
+  font-size: 22px;
+  font-weight: 900;
+}
+
+nav{
+  height: 80px;
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 100%;
+  vertical-align: center;
+}
+
+.nav-links{
+  display: flex;
+  /*border: 1px solid black;*/
+  justify-content: space-between;
+  width: 700px;
+  margin: auto;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+
+.nav-links a:hover{
+  border-bottom: 1px solid black;
+}
