@@ -1,9 +1,4 @@
 
-.nav-list li a:hover:before {
-  margin-left: 0;
-  opacity: 1;
-  visibility: visible;
-}
 .social-inner {
   display: flex;
   flex-direction: column;
@@ -14,6 +9,7 @@
   text-transform: uppercase;
   color: black;
   background-image: url('../../assets/images/vert-pastel.jpg');
+  margin: top 100px;
 }
 .social-container .col {
   border: 1px solid rgba(255, 255, 255, 0.1);
