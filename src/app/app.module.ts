@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { InfosComponent } from './infos/infos.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { MainsComponent } from './mains/mains.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { environment } from '../environments/environment';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    InfosComponent
+    InfosComponent,
+    MainsComponent
   ],
   imports: [
     BrowserModule,
